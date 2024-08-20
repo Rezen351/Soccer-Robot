@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BluetoothActivity">
+
+    <Button
+        android:id="@+id/buttonLBluetooth"
+        android:backgroundTint="@color/colorGreen"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/buttonRBluetooth"
+        android:backgroundTint="@color/colorGreen"
+        android:text="R"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Connection Status"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="86dp"
+        android:background="@drawable/bluetooth_icon"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:text="Ping : 5 ms"
+        android:textAlignment="center"
+        android:textSize="12dp" />
+
+    <com.jackandphantom.joystickview.JoyStickView
+        android:id="@+id/joy"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:innerCircleColor="@color/colorPurple"
+        app:innerCircleRadius="0.15"
+        app:outerCircleBorderColor="@color/colorPurple"
+        app:outerCircleBorderWidth="10"
+        />
+
+    <View
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle"
+        android:text="A"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/circle"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/circle"
+        android:text="Y"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonX"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/circle"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Connect to bluetooth" />
+
+    <EditText
+        android:id="@+id/inputBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnConnect"
+        android:layout_alignStart="@+id/btnConnect"
+        android:layout_alignEnd="@+id/btnConnect"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:inputType="textNoSuggestions"
+        android:text="Bluetooth Name" />
+
+</RelativeLayout>
